@@ -1,5 +1,5 @@
 public interface PlantCare {
 
-    void waterPlant();
+    void  waterPlant();
 
 }

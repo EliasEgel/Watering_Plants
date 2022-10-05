@@ -5,9 +5,14 @@ public class Palm extends Plant{//Ärver av Plant
         super(height, name);
     }
 
+    @Override
+    public double waterRequired() {
+        return (getHeight()*0.5);
+    }
+
 
     @Override
     public void waterPlant() {
-        JOptionPane.showMessageDialog(null,getName() + " behöver " + (getHeight()*0.5)+ " liter kranvatten/dag");
+        JOptionPane.showMessageDialog(null,getName() + " behöver " + waterRequired() + " liter kranvatten/dag");
     }
 }

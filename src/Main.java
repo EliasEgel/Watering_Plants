@@ -5,10 +5,10 @@ import java.util.List;
 public class Main {
 
     public Main(){
-        Plant palm1 = new Palm(5,"Laura");//Polymorfism Används när växterna skapas
-        Plant palm2 = new Palm(1,"Putte");
-        Plant kaktus = new Cactus(0.2,"Igge");
-        Plant köttÄtande = new MeatEating(0.7,"Meatloaf");
+        Plant palm1 = new Palm(5,HotelPlants.LAURA.plantName);//Polymorfism Används när växterna skapas
+        Plant palm2 = new Palm(1,HotelPlants.PUTTE.plantName);//Även Enums används här för att kunna få de specifika namnen på plantorna när objektet skapar
+        Plant kaktus = new Cactus(0.2,HotelPlants.IGGE.plantName);
+        Plant köttÄtande = new MeatEating(0.7,HotelPlants.PUTTE.plantName);
         List<Plant> plants = new ArrayList<>();
         plants.add(palm1);
         plants.add(palm2);

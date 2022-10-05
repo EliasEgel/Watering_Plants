@@ -6,7 +6,12 @@ public class Cactus extends Plant{//Ärver av Plant
     }
 
     @Override
+    public double waterRequired() {
+        return 2;
+    }
+
+    @Override
     public void waterPlant() {
-        JOptionPane.showMessageDialog(null,getName()+" behöver 2 cl Mineralvatten/dag");
+        JOptionPane.showMessageDialog(null,getName()+" behöver "+ waterRequired() + " cl mineralvatten/dag");
     }
 }
